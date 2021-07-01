@@ -60,7 +60,7 @@ const options = {
 const series = [
     {
         name: 'series1',
-        data: [21, 65 , 78, 65, 43,121, 87]
+        data: [21, 65 ,142 , 65, 43,131, 87]
     }
 ]
 
@@ -78,7 +78,7 @@ export default function Dashboard() {
                         pb={"4"}
                     >
                         <Text fontSize={"lg"} mb={"4"}>Inscritos da semana</Text>
-                        <Chart options={options} series={series} type={"area"} height={140} />
+                        <Chart options={options} series={series} type={"area"} height={160} />
                     </Box>
                     <Box
                         p={"8"}
@@ -87,7 +87,7 @@ export default function Dashboard() {
                         pb={"4"}
                     >
                         <Text fontSize={"lg"} mb={"4"}>Taxa de abertura</Text>
-                        <Chart options={options} series={series} type={"area"} height={140} />
+                        <Chart options={options} series={series} type={"area"} height={160} />
                     </Box>
                 </SimpleGrid>
             </Flex>

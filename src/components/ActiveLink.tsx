@@ -2,7 +2,7 @@ import Link, { LinkProps } from 'next/link';
 import {cloneElement, ReactElement} from "react";
 import {useRouter} from "next/router";
 
-interface ActiveLinkProps {
+interface ActiveLinkProps extends LinkProps {
     children: ReactElement;
     shouldMatchExactHref?: boolean;
 }

@@ -37,6 +37,8 @@ export function Header() {
             )}
             <Logo />
 
+            { isWideVersion && <SearchBox/>}
+
             <Flex
                 align={"center"}
                 ml={"auto"}

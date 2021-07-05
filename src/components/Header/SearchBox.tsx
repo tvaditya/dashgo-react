@@ -4,7 +4,7 @@ import {useRef} from "react";
 
 const searchInputRef = useRef<HTMLInputElement>(null)
 
-console.log(searchInputRef.current.value)
+//console.log(searchInputRef.current.value)
 
 export function SearchBox() {
     return (

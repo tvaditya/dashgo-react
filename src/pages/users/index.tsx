@@ -20,7 +20,6 @@ import {Pagination} from "../../components/Pagination";
 import {Sidebar} from "../../components/Sidebar";
 import {Header} from "../../components/Header";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
-// import { useEffect } from "react";
 import {useUsers} from "../../services/hooks/useUsers";
 import { useState } from "react";
 
@@ -94,17 +93,6 @@ export default function UserList() {
                                                     </Box>
                                                 </Td>
                                                 { isWideVersion && <Td>{user.createdAt}</Td> }
-                                                {/*<Td>*/}
-                                                {/*    <Button*/}
-                                                {/*        as={"a"}*/}
-                                                {/*        size={"sm"}*/}
-                                                {/*        fontSize={"sm"}*/}
-                                                {/*        colorScheme={"purple"}*/}
-                                                {/*        leftIcon={<Icon as={RiPencilLine} fontSize={"16"} />}*/}
-                                                {/*    >*/}
-                                                {/*        { isWideVersion ? 'Editar' : ''}*/}
-                                                {/*    </Button>*/}
-                                                {/*</Td>*/}
                                             </Tr>
                                         )
                                     })}

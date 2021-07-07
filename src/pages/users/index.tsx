@@ -26,6 +26,7 @@ import {Link as ChakraLink} from "@chakra-ui/react"
 import { queryClient} from "../../services/queryClient";
 import { api } from "../../services/api";
 
+
 export default function UserList() {
     const [page, setPage] = useState(1)
     const { data, isLoading, isFetching, error} = useUsers(page)
@@ -37,7 +38,7 @@ export default function UserList() {
         lg: true,
     })
 
-    async function handlePrefetchUser(userId: number) {
+    async function handlePrefetchUser(userId: string) {
         await queryClient.prefetchQuery(['user', userId], async () => {
             const response = await api.get(`users/${userId}`)
 
